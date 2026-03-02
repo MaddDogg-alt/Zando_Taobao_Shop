@@ -1,0 +1,81 @@
+.logo-slider{
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.logo-slider::before,
+.logo-slider::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:120px;
+    height:100%;
+    z-index:2;
+}
+
+.logo-slider::before{
+    left:0;
+    background:linear-gradient(to right, white, transparent);
+}
+
+.logo-slider::after{
+    right:0;
+    background:linear-gradient(to left, white, transparent);
+}
+.logo-slider:hover .logo-track{
+    animation-play-state: paused;
+}
+
+.logo-track{
+    display:flex;
+    gap:30px;
+    animation:scroll 20s linear infinite;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 45px;
+    height: 45px;
+    top: 45%;
+    transform: translateY(-50%); 
+    z-index: 10;
+}
+.carousel-control-prev{
+    left: 50px;
+}
+.carousel-control-next{
+    right: 50px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+.brand-logo{
+    height:200px;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.brand-logo:hover{
+    transform:scale(1.15);
+}
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:576px){
+    .logo-track{
+        gap: 15px;
+    }
+    .brand-logo{
+        height: 100px;
+    }
+    
+}

@@ -1,0 +1,92 @@
+.product-card{
+    border-radius: 10px;
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* Discount badge */
+.discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e60023;
+    color: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Vertical brand tag */
+.vertical-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px 0 0 0;
+}
+
+/* Price section */
+.price{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.new-price{
+    color: #e60023;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Heart icon */
+.bi-heart-fill{
+    color: #bbb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bi-heart-fill:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+/* Product title */
+.product-title{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+@media screen and (max-width:576px) {
+    .row{
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .product-card{
+        width: 170px;
+        height: 350px;
+    }
+}

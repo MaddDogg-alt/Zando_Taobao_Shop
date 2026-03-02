@@ -1,0 +1,204 @@
+body{
+    font-family: "Battambang", system-ui;
+}
+header{
+    height: 12vh;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+    
+}
+header > #nav-top{
+    height: 55%;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+header > #nav-bottom{
+    height: 45%;
+    font-size: .8rem;
+    background-color: rgb(204, 217, 229);
+}
+.nav > .nav-item:hover{
+    background-color: rgb(201, 201, 201);
+    transition: all 0.3s ease;
+}
+.nav > .nav-item > .nav-link{
+    color: black;
+}
+.nav > .nav-item > .nav-link:hover{
+    color: rgb(255, 0, 0);
+    transition: all 0.3s ease;
+}
+.search-box{ 
+    width:180px 
+}
+#logo > img{
+    height: 20px;
+}
+.bi{
+    cursor:pointer;
+    transition:.2s;
+}
+.bi:hover{
+    transform:scale(1.3);
+}
+.offcanvas-body .nav-link{
+    position: relative;
+    transition: all .25s ease;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+.offcanvas-body .nav-link:hover{
+    background-color: #bebebe;
+    transform: translateX(6px);
+    color: black !important;
+}
+.offcanvas-body li{
+    width:100%;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #d9d9d9;
+    font-weight: bolder;
+}
+.btn{
+    transition: all .25s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #bebebe;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.search-input{
+    padding-left:35px;
+    width:160px;
+}
+.search-icon{
+    left:10px;
+    top:7px;
+    color:gray;
+}
+.cart-badge{
+    position:absolute;
+    top:-6px;
+    right:-10px;
+    font-size:10px;
+}
+.mobile-logo{
+    height:26px;
+}
+
+.desktop-logo{
+    height:32px;
+}
+
+.mobile-badge,
+.desktop-badge{
+    position:absolute;
+    top:-6px;
+    right:-10px;
+    font-size:10px;
+}
+
+.logo{
+    height: 26px;
+}
+.nav .nav-item .dropdown-divider{
+    height: 0;
+    position: absolute;
+    width: 85%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.nav .nav-item:hover .dropdown-divider{
+    height: 600px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.menu{
+    padding: 20px 0;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: all 0.2s ease-in-out;
+} 
+.menu li a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+.dropdown-title{
+    font-weight: bolder;
+    color: black;
+    margin: 15px 0;
+}
+.dropdown-title a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.dropdown-title a:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+.mega-menu {
+    top: 100%;
+    left: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    opacity: 0;
+}
+.nav-item:hover .mega-menu {
+    transition: all 0.3s ease-in-out;
+    height: 500px;
+    opacity: 1;
+}
+
+.mega-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.mega-menu ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* mobile */
+@media screen and (max-width:576px){
+    .sidebar{
+        width: 75% !important;
+    }
+    .logo{
+        height:26px;
+    }
+}
+/* tablet */
+@media screen and (min-width:577px) and (max-width:992px){
+    .sidebar{
+        width: 50% !important;
+    }
+    .logo{
+        height:30px;
+    }
+}
+/* desktop */
+@media (min-width:1200px){
+    .logo{
+        height:34px;
+    }
+}
+
+
